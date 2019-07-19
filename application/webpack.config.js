@@ -5,10 +5,8 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 module.exports = {
   mode: (process.env.NODE_ENV ? process.env.NODE_ENV : 'development'),
   entry: {
-    app: [
-      './assets/js/common.js',
-      './assets/js/home.js'
-    ]
+    app: './assets/js/common.js',
+    home:  './assets/js/home.js'    
   },
   output: {
     path: path.resolve(__dirname, 'public/build'),

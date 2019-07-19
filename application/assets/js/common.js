@@ -17,8 +17,7 @@ $(document).ready(() => {
   $('[data-toggle="popover"]').popover()
   $('[data-toggle="tooltip"]').tooltip()
 
-  console.log(Translator.trans('home'))
-  
+ 
   $('#flashes .flash').each(function () {
     let flash = $(this)
     let type = flash.data('label')
