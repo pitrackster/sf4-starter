@@ -1,0 +1,5 @@
+home:                                     Accueil
+other:                                    Autre
+login:                                    Login
+register:                                 Register
+error:                                    Ooops... message d'erreur géneré via le controller ... Il devrait apparaitre dans un Toast :p

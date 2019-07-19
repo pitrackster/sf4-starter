@@ -1,0 +1,48 @@
+### VSCode
+/.vscode
+
+### docker
+/.env
+/docker-files/certs/*
+!/docker-files/certs/.gitkeep
+
+###> docker mysql folder ###
+/.db/
+
+npm-debug.log
+/application/npm-debug.log
+
+###> symfony/framework-bundle ###
+/application/.bash_history
+/application/.env
+/application/public/bundles/
+/application/public/routes/*
+/application/var/
+/application/vendor/
+/application/.composer
+application/web/*
+###< symfony/framework-bundle ###
+
+###> symfony/webpack-encore-pack ###
+/application/node_modules/
+/application/config/routes/js_translation.yaml
+/application/public/build/
+/application/public/upload/*
+/application/public/project_files/*
+!/application/public/project_files/.gitkeep
+/application/public/platform/*
+/application/public/user_images/*
+!/application/public/user_images/.gitkeep
+/application/npm-debug.log
+/application/yarn-error.log
+###< symfony/webpack-encore-pack ###
+
+###> symfony/phpunit-bridge ###
+/application/.phpunit
+/application/phpunit.xml
+###< symfony/phpunit-bridge ###
+
+###> symfony/web-server-bundle ###
+/application/.web-server-pid
+###< symfony/web-server-bundle ###
+

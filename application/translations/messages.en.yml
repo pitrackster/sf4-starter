@@ -1,0 +1,5 @@
+home:                                     Home
+other:                                    Other
+login:                                    Login
+register:                                 Register
+error:                                    Ooops... this error message was generated via the controller... It should appear in Toastr

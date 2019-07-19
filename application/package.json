@@ -1,0 +1,41 @@
+{
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@fortawesome/fontawesome-free": "^5.9.0",
+    "autoprefixer": "^9.6.1",
+    "babel-loader": "^8.0.6",
+    "bootstrap": "^4.3.1",
+    "css-loader": "^3.0.0",
+    "eslint": "^6.0.1",
+    "file-loader": "^4.1.0",
+    "jquery": "^3.4.1",
+    "lodash": "^4.17.14",
+    "mini-css-extract-plugin": "^0.8.0",
+    "node-sass": "^4.12.0",
+    "popper.js": "^1.15.0",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^7.0.1",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.36.0",
+    "webpack-cli": "^3.3.6"
+  },
+  "dependencies": {
+    "bazinga-translator": "^2.6.6",
+    "tinymce": "^5.0.11",
+    "toastr": "^2.1.4"
+  },
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+    "dev": "webpack",
+    "watch": "webpack --watch",
+    "build": "webpack production"
+  },
+  "browserslist": [
+    "> 0.5%",
+    "last 2 versions",
+    "Firefox ESR",
+    "not dead"
+  ]
+}
