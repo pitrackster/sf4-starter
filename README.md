@@ -13,40 +13,20 @@
 
 ## Install
 
-> Of course you need to install docker-ce and docker-compose
+> docker-ce and docker-compose are required...
 
 - clone this repository
-- `docker-compose up -d`
-- `docker-compose exec web /bin/bash`
-- `chown -R www-data:www-data var/log var/cache`
-- `make init`
+- copy `.env.dist` file to `.env` and edit key values as needed
+- copy `application/.env.dist` file to `application/.env` and edit key values as needed
+- run `docker-compose up -d`
+- run `docker-compose exec web /bin/bash`
+- run `make init`
 - go to `localhost:8080` and start coding !
-
-## Useful docker commands
-
-- `docker images` view all images and their size
-- `docker-compose config` shows the detail of each service and values from .env file
-
-## Usefull commands
-
-- `php bin/console doctrine:migrations:migrate`
-- `composer clear-cache`
-- there is a `Makefile` inside application folder that contains a lot of useful commands... read it !
 
 ## Good to know
 
+- there is a `Makefile` inside application folder that contains a lot of useful commands... read it !
 - Every time you want to install some dependencies (npm | composer) do it from inside the container
 - Every time you want to launch a symfony command, do it from inside the container
 - In fact the only things you want to do outside containers is editing the code and updating project files...
 - Js Translations are loaded via an ajax call ... So you wont be able to use js translations at page loading (but why would we want to do that ?)
-
-
-
-en partant d'une fresh install il manquait
-
-
-# app/config/routing.yml 
-``ỳaml
-_bazinga_jstranslation:     
-  resource: "@BazingaJsTranslationBundle/Resources/config/routing/routing.yml"
-```
