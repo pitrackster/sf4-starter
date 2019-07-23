@@ -40,3 +40,13 @@
 - In fact the only things you want to do outside containers is editing the code and updating project files...
 - Js Translations are loaded via an ajax call ... So you wont be able to use js translations at page loading (but why would we want to do that ?)
 
+
+
+en partant d'une fresh install il manquait
+
+
+# app/config/routing.yml 
+``ỳaml
+_bazinga_jstranslation:     
+  resource: "@BazingaJsTranslationBundle/Resources/config/routing/routing.yml"
+```
