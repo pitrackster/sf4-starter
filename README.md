@@ -35,10 +35,9 @@
 
 - There is a `Makefile` inside application folder that contains a lot of useful commands... read it !
 - Every time you want to install some dependencies (npm | composer) do it from inside the container
-- Every time you want to launch a symfony command, do it from inside the container
-- In fact the only things you want to do outside containers is editing the code and updating project files...
+- Every time you want to launch a symfony command (`php bin/console ....`), do it from outside the container
+  - If you do it from inside the container you'll need to change the owner on created files / folder... `chown [-R] <user>:<group> path/to/file/or/folder/`
 - Js Translations are loaded via an ajax call ... So you wont be able to use js translations at page loading (but why would we want to do that ?)
-- By the way each time you'll use a symfony command that creates pages/controllers/entites from inside the container you'll need to change the owner on created files... `chown [-R] <user>:<group> path/to/file/or/folder/`
 
 ## Errors
 
