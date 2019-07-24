@@ -28,26 +28,31 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ path('user_index') }}">
+                        <a class="nav-link" href="{{ path('admin') }}">
                             <i class="fas fa-question"></i>
-                            {{'other'|trans}}
+                            {{'secured'|trans}}
                         </a>
                     </li>
                 </ul>
                 <ul class="navbar-nav float-right">
-               
+                    {% if is_granted('IS_AUTHENTICATED_FULLY') %}
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <span class="nav-link">Welcome on board {{app.user.firstName}} {{app.user.lastName}}!</span>
+                        </li>                   
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{path('app_logout')}}">
                                 <i class="fas fa-sign-out-alt fa-fw"></i>
+                                {{'logout'|trans}}
+                            </a>
+                        </li>
+                    {% else %}
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{path('app_login')}}">
+                                <i class="fas fa-sign-in-alt fa-fw"></i>
                                 {{'login'|trans}}
                             </a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <i class="fas fa-id-card fa-fw"></i>
-                                {{'register'|trans}}
-                            </a>
-                        </li>
+                    {% endif %}
                 </ul>
             </div>
         </nav>
@@ -64,17 +69,6 @@
             
             {% endblock %}
         </div>
-
-        <footer class="text-muted" id="footer">
-            <div class="container">
-                <p class="float-right">
-                    <a href="#">{{"backtotop"|trans}}</a>
-                    <br/>
-                    <a href="#">{{"terms"|trans}}</a>
-                    <br/>
-                </p>
-            </div>
-        </footer>
 
         {% block javascripts %}
             

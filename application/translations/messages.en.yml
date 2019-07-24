@@ -1,5 +1,5 @@
 home:                                     Home
-other:                                    Other
+admin:                                    Secured area
 login:                                    Login
-register:                                 Register
+logout:                                   Logout
 error:                                    Ooops... this error message was generated via the controller... It should appear in Toastr

@@ -17,7 +17,7 @@ class HomeController extends AbstractController
     /**
      * @Route("/", name="home", methods={"GET"})
      */
-    public function index(UserRepository $userRepository, TranslatorInterface $translator): Response
+    public function index(TranslatorInterface $translator): Response
     {
         $flashbag = $this->get('session')->getFlashBag();
 
