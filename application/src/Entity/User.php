@@ -7,6 +7,9 @@ use Symfony\Component\Security\Core\User\UserInterface;
 
 /**
  * @ORM\Entity(repositoryClass="App\Repository\UserRepository")
+ * *** user is a postrgesql reserved word... so we need to specify its name explicitly with escaping @ORM\Table("`user`") ***
+ * More on this here https://github.com/doctrine/dbal/issues/1222
+ * @ORM\Table("`user`")
  */
 class User implements UserInterface
 {
