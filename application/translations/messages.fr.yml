@@ -1,5 +1,5 @@
 home:                                     Accueil
-secured:                                  Espace protégé
+users:                                    Gestion des utilisateurs
 login:                                    Connexion
 logout:                                   Déconnexion
 error:                                    Ooops... message d'erreur géneré via le controller ... Il devrait apparaitre dans un Toast :p
