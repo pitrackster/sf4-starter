@@ -23,14 +23,15 @@ RUN apt-get -qqq update && DEBIAN_FRONTEND=noninteractive apt-get install -qqq -
         php7.2-intl \
         php7.2-json \
         php7.2-mbstring \
-        php7.2-mysql \
+        php7.2-pgsql \
         php7.2-opcache \
         php7.2-readline \
         php7.2-xml \
         php7.2-zip \
         php7.2-gd \
         php-common \
-        php-imagick
+        php-imagick \
+        postgresql-11
 
 # Install Composer
 RUN curl -sS https://getcomposer.org/installer | php && mv composer.phar /usr/local/bin/composer && chmod +x /usr/local/bin/composer
