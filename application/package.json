@@ -22,7 +22,7 @@
   },
   "dependencies": {
     "bazinga-translator": "^2.6.6",
-    "tinymce": "^5.0.11",
+    "tinymce": "^5.6.0",
     "toastr": "^2.1.4"
   },
   "license": "UNLICENSED",
