@@ -18,7 +18,7 @@
     "sass-loader": "^7.0.1",
     "style-loader": "^0.23.1",
     "webpack": "^4.36.0",
-    "webpack-cli": "^3.3.6"
+    "webpack-cli": "^3.3.12"
   },
   "dependencies": {
     "bazinga-translator": "^2.6.6",
